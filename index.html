@@ -1416,7 +1416,7 @@ function rDash(){
   const gm=GT.filter(t=>tLevel(t.id)===4).length, gr=GT.filter(t=>tLevel(t.id)>=3).length;
   const cm=cardsMastered(), due=cardsDue(), wt=weakTopics(), reco=nextReco();
   const passed=UNITS.filter(u=>(S.units[u.id]||{}).passed).length;
-  let h='<div class="pagehead"><h2>Buenas. Plan de hoy.</h2><p>Tu camino de A2 alto a B2 sólido, alineado con el DELE. La gramática y el vocabulario mandan; el resto acompaña.</p></div>';
+  let h='<div class="pagehead"><h2>Buenas. Plan de hoy.</h2><p>Tu camino de A2 alto a B2 sólido, alineado con el DELE. La gramática y el vocabulario mandan; el resto acompaña.</p><div class="small" style="color:var(--faint);margin-top:6px">Versión: velvet · Montserrat · build 2026-07-05</div></div>';
   h+='<div class="hero"><div class="card big"><div class="levelchip">'+band()+'</div><div class="spread"><span class="muted small">Progreso hacia B2</span><b class="gold">'+progress()+'%</b></div><div class="bar mt" style="height:10px"><i style="width:'+progress()+'%"></i></div>';
   h+='<div class="row mt small muted"><span>✔ Hecho: '+passed+' de '+UNITS.length+' unidades · '+gm+' temas de gramática dominados</span></div>';
   h+='<div class="row small muted"><span>◻ Queda: '+(UNITS.length-passed)+' unidades · '+(GT.length-gm)+' temas por dominar · '+(ALLCARDS.length-cm)+' tarjetas</span></div></div>';
